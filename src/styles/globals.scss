@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(10, 10, 10);
+  color: whitesmoke;
+  position: relative;
+  z-index: -99;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 950px;
+  margin: 10px auto;
+}
+
+.content-title {
+  padding: 15px 0 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .title-icon {
+    i {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.navbar {
+  height: 70px;
+  padding-top: 15px;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  background-color: black;
+
+  .navbar-logo {
+    span {
+      font-weight: 600;
+    }
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      z-index: 100 !important;
+    }
+  }
+}
+
+.intro {
+  height: 100vh;
+  margin: auto;
+  padding-top: 20vh;
+  position: relative;
+
+  .container {
+    max-width: 700px;
+    text-align: center;
+
+    .avatar {
+      border: 2px solid orangered;
+      padding: 3px;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      margin-bottom: 20px;
+
+      img {
+        border: 2px solid red;
+        padding: 3px;
+        border-radius: 50%;
+      }
+    }
+
+    .down-arrow {
+      position: absolute;
+      font-size: 20px;
+      bottom: 40px;
+      left: 0px;
+      right: 0px;
+    }
+
+    .intro-text {
+      padding-top: 10px;
+    }
+
+    .text-sm {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .text-lg {
+      font-size: 36px;
+      font-weight: 600;
+    }
+    .text-md {
+      font-size: 22px;
+      line-height: 32px;
+      opacity: 0.8;
+    }
+
+    .social-icons {
+      padding-top: 10px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        width: fit-content;
+        margin: auto;
+        font-size: 24px;
+      }
+
+      img {
+        height: 25px;
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+.about {
+  padding: 60px 0;
+
+  .container {
+    .content {
+      display: grid;
+      align-items: centre;
+      grid-template-columns: 1.25fr 1.5fr;
+
+      p {
+        line-height: 24px;
+      }
+
+      .about-image {
+        margin: auto;
+      }
+    }
+  }
+}
+
+.skills {
+  padding: 60px 0;
+
+  .container {
+    .content {
+      display: grid;
+      align-items: flex-start;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 30px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+      }
+
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+}
+.hobbies {
+  padding: 40px 0;
+
+  .container {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+
+      .hobbie-item {
+        background-color: black;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+
+        p {
+          line-height: 20px;
+        }
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.blog {
+  padding: 60px 0;
+  .container {
+    .content {
+      .cards {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .card {
+          background-color: black;
+          padding: 25px 15px;
+          border-radius: 10px;
+          cursor: pointer;
+
+          .card-title {
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+          .card-date {
+            opacity: 0.7;
+            padding-bottom: 5px;
+          }
+
+          .card-excerpt {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-post {
+  padding-top: 65px;
+  .post-head {
+    .container {
+      position: relative;
+      height: 60vh;
+      max-width: 950px;
+    }
+    .cover-bg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #00000028;
+      
+    }
+    .post-head-data {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      .title{
+        font-size: 36px;
+        font-weight: 600;
+
+
+      }
+      .date{
+        font-size: 18px;
+        line-height: 24px;
+
+      }
+      .author{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .post-content {
+    .container{
+      .go-back{
+        cursor: pointer;
+      }
+      .content{
+        max-width: 800px;
+        margin :auto;
+        padding :50px 0px;
+        line-height: 26px;
+        p {
+          .post-image{
+            display: block;
+            width: 350px;        
+            margin: 15px auto; 
+          }
+      }
+
+      }
+      
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  hr {
+    max-width: 950px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 970px) {
+  .container {
+    padding: 0 20px;
+  }
+  .about {
+    padding: 70px 0 20px 0;
+    .container {
+      .content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  }
+  .skills {
+    padding: 70px 0 20px 0;
+    .container {
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .hobbies {
+    padding: 70px 0 20px 0;
+    .container {
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .blog {
+    padding: 70px 0 20px 0;
+    .container {
+      .content {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  footer {
+    hr {
+      margin: 20px;
+    }
+  }
+}
