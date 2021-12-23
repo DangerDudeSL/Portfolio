@@ -8,7 +8,7 @@ const Index = () => {
         <div className="container">
           <div className="content">
             <div className="avatar">
-              <Image src="/Intro.jpg" height="300" width="300" />
+              <Image src="/me1.jpg" height="300" width="300" />
             </div>
 
             <p className="text-sm">Hello! I'm</p>
@@ -17,27 +17,27 @@ const Index = () => {
             <div className="social-icons">
               <ul>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/direndra-kavindu-4064461a8/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/DangerDudeSL" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/profile.php?id=100004082513841" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.reddit.com/user/DangerDudeSL" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-reddit-alien"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://stackoverflow.com/users/story/17733824?newreg=1d6bd5af59e7403aa1de5383dc99fdd2&_=1" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-stack-overflow"></i>
                   </a>
                 </li>

@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Blog = () => {
   return (
+    <>
+    <Head>
+      <title>A YouTube Journey | Direndra's Profile</title>
+    </Head>
     <div className="blog-post">
       <section className="post-head">
         <div className="container">
@@ -87,12 +92,14 @@ const Blog = () => {
               We are so proud of our achievement and we will take this to
               another level in the future. <br />
               <br />
-              Check here to see our channel
+              <a href="https://www.youtube.com/c/Btech94"><u>Click here to see our channel</u></a>
+              
             </p>
           </div>
         </div>
       </section>
     </div>
+    </>
   );
 };
 
